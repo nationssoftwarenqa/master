@@ -1,0 +1,24 @@
+{
+  "name": "cypresscucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --browser chrome --headed --e2e --spec cypress/e2e/.."
+  },
+  "keywords": [],
+  "author": "Nations Softer Testing",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^13.17.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": true,
+    "step_definitions": "cypress/e2e/.."
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}
